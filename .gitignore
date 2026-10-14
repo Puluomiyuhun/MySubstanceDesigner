@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+user-data/
+*.log
+*.pyc
+*.tmp
+*.mlsbs
+*.sbs
+*.sbsar
+assets/designer/
+assets/package-icons/
+sbs-node-reference.json
+*-verification.json
+test-output.png

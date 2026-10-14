@@ -1,0 +1,13 @@
+/* Standalone fallback theme. No extracted Adobe stylesheet. */
+QWidget { color: #dddddd; background-color: #303030; }
+QToolBar { spacing: 3px; border: 0; }
+QMenuBar, QMenu { background-color: #292929; }
+QMenu::item:selected, QTreeView::item:selected, QListView::item:selected { background-color: #3d596b; }
+QLineEdit, QComboBox, QSpinBox, QDoubleSpinBox { background-color: #252525; border: 1px solid #555555; padding: 3px; }
+QPushButton, QToolButton { border: 1px solid transparent; padding: 3px; }
+QPushButton:hover, QToolButton:hover { background-color: #484848; border-color: #666666; }
+QHeaderView::section { background-color: #343434; border: 1px solid #252525; padding: 4px; }
+QSlider::groove:horizontal { height: 3px; background: #707070; }
+QSlider::handle:horizontal { width: 10px; margin: -4px 0; background: #aaaaaa; border-radius: 5px; }
+QScrollBar:vertical { width: 10px; }
+QScrollBar:horizontal { height: 10px; }

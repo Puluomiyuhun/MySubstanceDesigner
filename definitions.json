@@ -1,0 +1,906 @@
+[
+  {
+    "id": "uniform",
+    "name": "Uniform Color",
+    "zh": "均匀颜色",
+    "op": 0,
+    "inputs": [],
+    "params": [
+      {
+        "name": "颜色",
+        "value": "#ad794d",
+        "color": true
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "noise",
+    "name": "White Noise",
+    "zh": "白噪声",
+    "op": 1,
+    "inputs": [],
+    "params": [
+      {
+        "name": "Scale",
+        "value": 128,
+        "min": 2,
+        "max": 512,
+        "step": 1
+      },
+      {
+        "name": "Random Seed",
+        "value": 7,
+        "min": 0,
+        "max": 999,
+        "step": 1
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "clouds",
+    "name": "Clouds",
+    "zh": "分形云纹",
+    "op": 2,
+    "inputs": [],
+    "params": [
+      {
+        "name": "Scale",
+        "value": 5,
+        "min": 1,
+        "max": 32,
+        "step": 1
+      },
+      {
+        "name": "Random Seed",
+        "value": 7,
+        "min": 0,
+        "max": 999,
+        "step": 1
+      },
+      {
+        "name": "Roughness",
+        "value": 0.52,
+        "min": 0.1,
+        "max": 0.9,
+        "step": 0.01
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "perlin",
+    "name": "Perlin Noise",
+    "zh": "平滑噪声",
+    "op": 3,
+    "inputs": [],
+    "params": [
+      {
+        "name": "Scale",
+        "value": 8,
+        "min": 1,
+        "max": 64,
+        "step": 1
+      },
+      {
+        "name": "Random Seed",
+        "value": 2,
+        "min": 0,
+        "max": 999,
+        "step": 1
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "cells",
+    "name": "Cells",
+    "zh": "细胞纹理",
+    "op": 4,
+    "inputs": [],
+    "params": [
+      {
+        "name": "Scale",
+        "value": 9,
+        "min": 2,
+        "max": 40,
+        "step": 1
+      },
+      {
+        "name": "Random Seed",
+        "value": 5,
+        "min": 0,
+        "max": 999,
+        "step": 1
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "brick",
+    "name": "Brick Generator",
+    "zh": "砖块生成器",
+    "op": 5,
+    "inputs": [],
+    "params": [
+      {
+        "name": "X Amount",
+        "value": 8,
+        "min": 1,
+        "max": 24,
+        "step": 1
+      },
+      {
+        "name": "Y Amount",
+        "value": 12,
+        "min": 1,
+        "max": 32,
+        "step": 1
+      },
+      {
+        "name": "Mortar",
+        "value": 0.09,
+        "min": 0.01,
+        "max": 0.4,
+        "step": 0.01
+      },
+      {
+        "name": "Luminance Variation",
+        "value": 0.3,
+        "min": 0,
+        "max": 0.9,
+        "step": 0.01
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "checker",
+    "name": "Checker",
+    "zh": "棋盘格",
+    "op": 6,
+    "inputs": [],
+    "params": [
+      {
+        "name": "Tiling",
+        "value": 8,
+        "min": 2,
+        "max": 32,
+        "step": 2
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "gradient",
+    "name": "Gradient Linear",
+    "zh": "线性渐变",
+    "op": 7,
+    "inputs": [],
+    "params": [
+      {
+        "name": "Angle",
+        "value": 0,
+        "min": 0,
+        "max": 360,
+        "step": 1
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "shape",
+    "name": "Shape",
+    "zh": "基础形状",
+    "op": 8,
+    "inputs": [],
+    "params": [
+      {
+        "name": "Size",
+        "value": 0.7,
+        "min": 0.05,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Pattern",
+        "value": 0,
+        "options": [
+          "Disc",
+          "Square",
+          "Diamond"
+        ]
+      },
+      {
+        "name": "Softness",
+        "value": 0.04,
+        "min": 0.001,
+        "max": 0.5,
+        "step": 0.01
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "stripes",
+    "name": "Stripes",
+    "zh": "条纹",
+    "op": 9,
+    "inputs": [],
+    "params": [
+      {
+        "name": "Amount",
+        "value": 10,
+        "min": 1,
+        "max": 64,
+        "step": 1
+      },
+      {
+        "name": "Width",
+        "value": 0.5,
+        "min": 0.01,
+        "max": 0.99,
+        "step": 0.01
+      },
+      {
+        "name": "Angle",
+        "value": 0,
+        "min": 0,
+        "max": 180,
+        "step": 1
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "wood",
+    "name": "Wood Grain",
+    "zh": "木纹",
+    "op": 10,
+    "inputs": [],
+    "params": [
+      {
+        "name": "Scale",
+        "value": 16,
+        "min": 2,
+        "max": 50,
+        "step": 1
+      },
+      {
+        "name": "Random Seed",
+        "value": 4,
+        "min": 0,
+        "max": 999,
+        "step": 1
+      },
+      {
+        "name": "Distortion",
+        "value": 0.5,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "blend",
+    "name": "Blend",
+    "zh": "混合",
+    "op": 11,
+    "inputs": [
+      "Bg",
+      "Fg",
+      "Mask"
+    ],
+    "params": [
+      {
+        "name": "Opacity",
+        "value": 0.65,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Blending Mode",
+        "value": 1,
+        "options": [
+          "Copy",
+          "Multiply",
+          "Add",
+          "Subtract",
+          "Screen",
+          "Overlay",
+          "Max",
+          "Min"
+        ]
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "levels",
+    "name": "Levels",
+    "zh": "色阶",
+    "op": 12,
+    "inputs": [
+      "In"
+    ],
+    "params": [
+      {
+        "name": "Input Low",
+        "value": 0.05,
+        "min": 0,
+        "max": 0.95,
+        "step": 0.01
+      },
+      {
+        "name": "Input High",
+        "value": 0.95,
+        "min": 0.05,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Gamma",
+        "value": 1,
+        "min": 0.1,
+        "max": 3,
+        "step": 0.01
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "invert",
+    "name": "Invert Grayscale",
+    "zh": "反相",
+    "op": 13,
+    "inputs": [
+      "In"
+    ],
+    "params": [],
+    "category": "处理"
+  },
+  {
+    "id": "blur",
+    "name": "Blur",
+    "zh": "模糊",
+    "op": 14,
+    "inputs": [
+      "In"
+    ],
+    "params": [
+      {
+        "name": "Intensity",
+        "value": 3,
+        "min": 0,
+        "max": 12,
+        "step": 0.25
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "directionalBlur",
+    "name": "Directional Blur",
+    "zh": "方向模糊",
+    "op": 15,
+    "inputs": [
+      "In"
+    ],
+    "params": [
+      {
+        "name": "Intensity",
+        "value": 8,
+        "min": 0,
+        "max": 32,
+        "step": 0.25
+      },
+      {
+        "name": "Angle",
+        "value": 0,
+        "min": 0,
+        "max": 360,
+        "step": 1
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "warp",
+    "name": "Directional Warp",
+    "zh": "方向扭曲",
+    "op": 16,
+    "inputs": [
+      "In",
+      "Map"
+    ],
+    "params": [
+      {
+        "name": "Intensity",
+        "value": 0.035,
+        "min": 0,
+        "max": 0.25,
+        "step": 0.001
+      },
+      {
+        "name": "Angle",
+        "value": 45,
+        "min": 0,
+        "max": 360,
+        "step": 1
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "transform",
+    "name": "Transformation 2D",
+    "zh": "二维变换",
+    "op": 17,
+    "inputs": [
+      "In"
+    ],
+    "params": [
+      {
+        "name": "Tiling",
+        "value": 1,
+        "min": 0.1,
+        "max": 8,
+        "step": 0.1
+      },
+      {
+        "name": "Rotation",
+        "value": 0,
+        "min": -180,
+        "max": 180,
+        "step": 1
+      },
+      {
+        "name": "Offset X",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Offset Y",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.01
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "threshold",
+    "name": "Threshold",
+    "zh": "阈值",
+    "op": 18,
+    "inputs": [
+      "In"
+    ],
+    "params": [
+      {
+        "name": "Threshold",
+        "value": 0.5,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Mode",
+        "value": 0,
+        "options": [
+          "Greater",
+          "Greater or equal",
+          "Lower",
+          "Lower or equal"
+        ]
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "gradientMap",
+    "name": "Gradient Map",
+    "zh": "渐变映射",
+    "op": 19,
+    "inputs": [
+      "In"
+    ],
+    "params": [
+      {
+        "name": "Low Color",
+        "value": "#25201c",
+        "color": true
+      },
+      {
+        "name": "High Color",
+        "value": "#c49062",
+        "color": true
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "normal",
+    "name": "Normal",
+    "zh": "高度转法线",
+    "op": 20,
+    "inputs": [
+      "Height"
+    ],
+    "params": [
+      {
+        "name": "Intensity",
+        "value": 4,
+        "min": 0.1,
+        "max": 16,
+        "step": 0.01
+      },
+      {
+        "name": "Format",
+        "value": 0,
+        "options": [
+          "OpenGL",
+          "DirectX"
+        ]
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "edge",
+    "name": "Edge Detect",
+    "zh": "边缘检测",
+    "op": 21,
+    "inputs": [
+      "In"
+    ],
+    "params": [
+      {
+        "name": "Intensity",
+        "value": 5,
+        "min": 0.1,
+        "max": 20,
+        "step": 0.01
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "sharpen",
+    "name": "Sharpen",
+    "zh": "锐化",
+    "op": 22,
+    "inputs": [
+      "In"
+    ],
+    "params": [
+      {
+        "name": "Intensity",
+        "value": 1,
+        "min": 0,
+        "max": 5,
+        "step": 0.01
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "quantize",
+    "name": "Quantize",
+    "zh": "色调分阶",
+    "op": 23,
+    "inputs": [
+      "In"
+    ],
+    "params": [
+      {
+        "name": "Steps",
+        "value": 5,
+        "min": 2,
+        "max": 24,
+        "step": 1
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "output",
+    "name": "Output",
+    "zh": "输出",
+    "op": 24,
+    "inputs": [
+      "In"
+    ],
+    "params": [],
+    "category": "输出"
+  },
+  {
+    "id": "tile",
+    "name": "Tile Generator",
+    "zh": "规则图案平铺",
+    "op": 25,
+    "inputs": [],
+    "params": [
+      {
+        "name": "X Amount",
+        "value": 8,
+        "min": 1,
+        "max": 24,
+        "step": 1
+      },
+      {
+        "name": "Y Amount",
+        "value": 8,
+        "min": 1,
+        "max": 24,
+        "step": 1
+      },
+      {
+        "name": "Scale",
+        "value": 0.65,
+        "min": 0.05,
+        "max": 0.98,
+        "step": 0.01
+      },
+      {
+        "name": "Pattern",
+        "value": 0,
+        "options": [
+          "Disc",
+          "Square",
+          "Diamond"
+        ]
+      }
+    ],
+    "category": "生成器"
+  },
+  {
+    "id": "emboss",
+    "name": "Emboss",
+    "zh": "浮雕",
+    "op": 26,
+    "inputs": [
+      "In"
+    ],
+    "params": [
+      {
+        "name": "Intensity",
+        "value": 3,
+        "min": 0,
+        "max": 12,
+        "step": 0.01
+      },
+      {
+        "name": "Angle",
+        "value": 45,
+        "min": 0,
+        "max": 360,
+        "step": 1
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "slope",
+    "name": "Slope Warp",
+    "zh": "坡度扭曲（近似）",
+    "op": 27,
+    "inputs": [
+      "In",
+      "Slope"
+    ],
+    "params": [
+      {
+        "name": "Intensity",
+        "value": 0.04,
+        "min": 0,
+        "max": 0.2,
+        "step": 0.001
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "grayscale",
+    "name": "Grayscale Conversion",
+    "zh": "灰度转换",
+    "op": 28,
+    "inputs": [
+      "In"
+    ],
+    "params": [],
+    "category": "处理"
+  },
+  {
+    "id": "contrast",
+    "name": "Brightness Contrast",
+    "zh": "亮度对比度",
+    "op": 29,
+    "inputs": [
+      "In"
+    ],
+    "params": [
+      {
+        "name": "Brightness",
+        "value": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Contrast",
+        "value": 1,
+        "min": 0,
+        "max": 4,
+        "step": 0.01
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "histogramScan",
+    "name": "Histogram Scan",
+    "zh": "直方图扫描",
+    "op": 30,
+    "inputs": [
+      "Input"
+    ],
+    "params": [
+      {
+        "name": "Position",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Contrast",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Invert Position",
+        "value": 0,
+        "options": [
+          "Off",
+          "On"
+        ]
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "histogramRange",
+    "name": "Histogram Range",
+    "zh": "直方图范围",
+    "op": 31,
+    "inputs": [
+      "Input"
+    ],
+    "params": [
+      {
+        "name": "Range",
+        "value": 0.5,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Position",
+        "value": 0.5,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "histogramSelect",
+    "name": "Histogram Select",
+    "zh": "直方图选择",
+    "op": 32,
+    "inputs": [
+      "Input"
+    ],
+    "params": [
+      {
+        "name": "Position",
+        "value": 0.5,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Range",
+        "value": 0.25,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Contrast",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "histogramShift",
+    "name": "Histogram Shift",
+    "zh": "直方图偏移",
+    "op": 33,
+    "inputs": [
+      "Input"
+    ],
+    "params": [
+      {
+        "name": "Position",
+        "value": 0.5,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      }
+    ],
+    "category": "处理"
+  },
+  {
+    "id": "levelsAdvanced",
+    "name": "Levels Extended",
+    "zh": "色阶（扩展）",
+    "op": 34,
+    "inputs": [
+      "Input"
+    ],
+    "params": [
+      {
+        "name": "Input Low",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Input High",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Gamma",
+        "value": 1,
+        "min": 0.01,
+        "max": 10,
+        "step": 0.01
+      },
+      {
+        "name": "Output Low",
+        "value": 0,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "name": "Output High",
+        "value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      }
+    ],
+    "category": "处理"
+  }
+]
